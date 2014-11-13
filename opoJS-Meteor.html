@@ -1,0 +1,222 @@
+<head>
+  	<title>opoJS - Meteor</title>
+  	<meta charset="utf-8">
+	<meta name="description" content="Meteor presentation for opoJS #2">
+  	<meta name="author" content="João Oliveira">
+
+  	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="apple-touch-icon" href="img/meteor-logo-ios.png">
+	<link href="img/splash.png" media="(device-width: 375px) and (device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+  	<link rel="stylesheet" href="css/reveal.css">
+  	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	{{> reveal}}
+</body>
+
+<template name="reveal">
+	<div class="reveal">
+		<div class="slides">
+			<section class="intro">
+				<img src="img/meteor-logo.png" alt="logo">
+				<p>
+					<small>by <a href="http://twitter.com/Joao_Oliveira">@Joao_Oliveira</a></small>
+				</p>
+			</section>
+
+			<section class="who-am-i">
+				<h2>whoami</h2>
+				<ul>
+					<li><a href="http://twitter.com/opojs">@Joao_Oliveira</a></li>
+					<li>Software Engineer at ROFF</li>
+					<li>MS in Computer and Telematics by Aveiro University</li>
+					<li>Worked at startups and large companies</li>
+					<li>@opoJS</li>
+				</ul>
+			</section>
+
+			<section class="meteor-intro">
+				<h2>What is Meteor</h2>
+
+				<p><i>"a complete open source platform for building web and mobile apps in pure JavaScript"</i></p>
+			</section>
+
+			<section class="milestones">
+				<h2>Meteor milestones</h2>
+				<ul>
+					<li>Dec'11 - Introduced as Skybreak</li>
+					<li>Jan'12 - Changed name to Meteor</li>
+					<li>Jul'12 - $11.2M first round led by a16z</li>
+					<li>Oct'14 - Meteor 1.0</li>
+					<ul>
+						<li>Stable for writing Apps / Packages / Books & Tutorials</li>
+						<li>Supported for Production Use</li>
+					</ul>
+					<li>Nov'14 - Meteor Day: 134 meetups, 4.259 developers</li>
+				</ul>
+			</section>
+
+			<section class="principles">
+				<h2>Core principles</h2>
+				
+				<ol>
+					<li>Data on the Wire</li>
+					<li>Latency Compensation</li>
+					<li>One Language</li>
+					<li>Database Everywhere</li>
+					<li>Full Stack Reactivity</li>
+					<li>Embrace the Ecosystem</li>
+					<li>Simplicity Equals Productivity</li>
+				</ol>
+			</section>
+
+			<section class="data-on-the-wire">
+				<section class="dotw-intro">
+					<h2>1. Data on the Wire</h2>
+
+					<p>"Meteor doesn't send HTML over the network. The server sends data and lets the client render it."</p>
+				</section>
+
+				<section class="dotw-traditional-get">
+					<h3>Traditional app</h3>
+
+					<img src="resources/traditional.png" alt="Traditional app">
+				</section>
+				
+				<section class="dotw-meteor-get">
+					<h3>Meteor app</h3>
+
+					<img src="resources/meteor.png" alt="Meteor app">
+				</section>
+			</section>
+
+			<section class="latency-compensation">
+				<section class="lc-intro">
+					<h2>2. Latency Compensation</h2>
+
+					<p>"On the client, Meteor prefetches data and simulates models to make it look like server method calls return instantly."</p>
+				</section>
+
+				<section class="lc-traditional-post">
+					<h3>Traditional app</h3>
+
+					<img src="resources/traditional2.png" alt="Traditional app">
+				</section>
+				
+				<section class="lc-meteor-post">
+					<h3>Meteor app</h3>
+
+					<img src="resources/meteor2.png" alt="Meteor app">
+				</section>
+			</section>
+
+			<section class="one-language">
+				<section class="ol-intro">
+					<h2>3. One Language</h2>
+
+					<p>"Meteor lets you write both the client and the server parts of your application in JavaScript."</p>
+				</section>
+
+				<section class="ol-traditional">
+					<h3>Traditional app</h3>
+
+					<img src="resources/traditional3.png" alt="Traditional app">
+				</section>
+				
+				<section class="ol-meteor">
+					<h3>Meteor app</h3>
+
+					<p>Everything JavaScript (optionally)</p>
+					<p>Use the same APIs on the client and on the server.</p>
+				</section>
+			</section>
+
+			<section class="database-everywhere">
+				<section class="de-intro">
+					<h2>4. Database Everywhere</h2>
+
+					<p>"You can use the same methods to access your database from the client or the server."</p>
+				</section>
+			</section>
+
+			<section class="data-on-the-wire">
+				<section class="dotw-intro">
+					<h2>5. Full Stack Reactivity</h2>
+
+					<p>"In Meteor, realtime is the default. All layers, from database to template, update themselves automatically when necessary."</p>
+				</section>
+			</section>
+
+			<section class="data-on-the-wire">
+				<section class="dotw-intro">
+					<h2>6. Embrace the Ecosystem</h2>
+
+					<p>"Meteor is open source and integrates with existing open source tools and frameworks."</p>
+				</section>
+
+				<section class="dotw-atmosphere">
+					<h2>ATMOSPHERE</h2>
+
+					<p>Trusted source for JavaScript Packages and Meteor resources</p>
+					<p>Trending, most recent, most used</p>
+					<p>&nbsp;</p>
+					<p>accounts-password, email, bootstrap, less, etc..</p>
+				</section>
+			</section>
+
+			<section class="data-on-the-wire">
+				<section class="dotw-intro">
+					<h2>7. Simplicity Equals Productivity</h2>
+
+					<p>"The best way to make something seem simple is to have it actually be simple. Meteor's main functionality has clean, classically beautiful APIs."</p>
+				</section>
+			</section>
+
+			<section class="demo">
+				<h1>Demo</h1>
+			</section>
+
+			<section class="recomendations">
+				<section class="rec-intro">
+					<h2>Meteor.com</h2>
+
+					<p>Tutorial</p>
+					<p>Documentation</p>
+					<p>Example apps</p>
+				</section>
+
+				<section class="rec-intro">
+					<h2>BulletProof Meteor</h2>
+
+					<p>Performance</p>
+					<p>Defer the Execution</p>
+					<p>Subscription Caching</p>
+					<p>CPU Profiling</p>
+				</section>
+
+				<section class="rec-intro">
+					<h2>Kadira</h2>
+
+					<img src="resources/kadira.png" alt="Kadira">
+					<p>Performance Monitoring</p>
+
+				</section>
+
+				<section class="rec-intro">
+					<h2>Youtube</h2>
+
+					<p>Meteor devshops SF & London</p>
+				</section>
+			</section>
+
+			<section class="the-end">
+				<h1>The end</h1>
+			</section>
+
+		</div>
+	</div>
+</template>
